@@ -17,20 +17,22 @@ import { faPhone, faSearch, faShoppingBag,  } from '@fortawesome/free-solid-svg-
 
 const Header = () => {
   const iconstyle:React.CSSProperties = {
-    width:'20px',
-    color:'',
+    // width:'40px',
+      // fontSize:'2em',
+    // color:'red',
   }
 
   return (
     <div>
       <header className='
-        flex w-full justify-between px-2 items-center shadow-md
+        flex w-full justify-between px-2 items-center
+        text-3xl sm:4xl md:6xl shadow-md
       '>
 
 
         {/* sos */}
         <div className={`${s.sosicons } hidden  
-            grid-cols-1  gap-2
+            grid-cols-1  gap-8  ml-28
             md:flex`}>
           <FontAwesomeIcon style={iconstyle} icon={faSquareYoutube} />
           <FontAwesomeIcon style={iconstyle} icon={faFacebook} />
@@ -58,8 +60,8 @@ const Header = () => {
 
 
         {/* c&c & sear */}
-        <div className='flex items-center '>
-         <div className={`flex gap-2 ${s.contIcons}`}>
+        <div className='flex items-center  '>
+         <div className={`flex gap-6 items-center ${s.contIcons}`}>
           <FontAwesomeIcon icon={faUser} style={iconstyle} />
           <FontAwesomeIcon icon={faEnvelope} style={iconstyle}
             className='hidden md:block'

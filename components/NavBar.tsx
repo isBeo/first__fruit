@@ -20,7 +20,7 @@ const NavBar = () => {
 
 
   return (
-    <div>
+    <div className='my-4'>
 
 
         <nav className='hidden lg:flex p-3 justify-around items-center w-4/5 mx-auto text-2xl'>
@@ -75,6 +75,8 @@ const NavBar = () => {
             <Link href={'/blog'}>Blog</Link>
         </nav>
         </div>
+
+        <hr className='border-green-800 border-y-8' />
 
     </div>
   )
