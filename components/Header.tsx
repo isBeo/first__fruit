@@ -26,7 +26,7 @@ const Header = () => {
     <div>
       <header className='
         flex w-full justify-between px-2 items-center
-        text-3xl sm:4xl md:6xl shadow-md
+        text-3xl sm:4xl md:6xl shadow-md text-pryColor
       '>
 
 
@@ -50,10 +50,10 @@ const Header = () => {
               height={144}
             />
           </div>
-          <h1 className={`flex flex-col text-2xl sm:text-4xl font-extrabold ${s.title}`}>
-            <span>Midwife</span>
-            <span>Inspired</span>
-            <span>Plus</span>
+          <h1 className={`flex flex-col text-2xl  sm:text-4xl font-extrabold ${s.title}`}>
+            <span className='text-pryColor'>Midwife</span>
+            <span className='text-secColor'>Inspired</span>
+            <span className='text-pryColor'>Plus</span>
           </h1>
         </div>
 

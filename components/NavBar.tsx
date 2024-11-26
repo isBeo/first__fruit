@@ -20,7 +20,7 @@ const NavBar = () => {
 
 
   return (
-    <div className='my-4'>
+    <div className='my-4 relative z-50 nav'>
 
 
         <nav className='hidden lg:flex p-3 justify-around items-center w-4/5 mx-auto text-2xl'>
@@ -39,7 +39,14 @@ const NavBar = () => {
         <div className="mobile flex lg:hidden justify-between 
                 p-4 items-center ">
             
-        <form action="" className=' md:ml-72 sm:ml-28 max-w-[500px] h-[40px] w-4/5 flex justify-between items-center border shadow-md px-4 rounded-md '>
+        <form action="" className='
+             md:ml-72 sm:ml-28 max-w-[500px] 
+             h-[40px] w-4/5 flex 
+             justify-between items-center 
+             border shadow-md px-4 
+             rounded-md placeholder:bg-pryColor
+             placeholder:text-secColor'>
+
             <input type="search" placeholder='Search MIP' className='w-4/5 h-full
                     
             ' />
@@ -59,11 +66,11 @@ const NavBar = () => {
         </div>
 
 
-        <div className="mobileMenu">
+        <div className="mobileMenu  md:hidden">
         <nav className={`${!open?'hidden':'flex'} 
-            flex-col w-[100%] h-[100vw] bg-green-800
+            flex-col w-[100%] h-[100vw] bg-pryColor
             fixed justify-start items-center py-5 text-4xl
-            gap-3 text-slate-300 
+            gap-3 text-secColor 
         `}>
             <Link href={'/'}>Home</Link>
             <Link href={'/about'}>About</Link>
@@ -76,7 +83,7 @@ const NavBar = () => {
         </nav>
         </div>
 
-        <hr className='border-green-800 border-y-8' />
+        <hr className='border-pryColor shadow-lg shadow-pryColor border-y-8' />
 
     </div>
   )

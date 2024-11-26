@@ -5,12 +5,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --pryColor:#55650e;
+  --secColor:#c7b251;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+ 
   }
 }
 
@@ -18,7 +21,23 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+
 }
 /* .t{
   background-color: black;
 } */
+
+.hero{
+  background-image:url('../public/heroImage.jpg');
+  background-position: center;
+  background-size:cover;
+}
+.hero h2{
+  background: linear-gradient(rgba(85,101,14,.2), var(--secColor));
+  padding:.2em;
+  text-shadow: 0 0 2px black;
+}
+
+.nav li{
+  color:var(--pryColor)
+}
